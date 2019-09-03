@@ -1,0 +1,3 @@
+#!/bin/bash
+clamscan -d custom.db -l log.txt -r --max-filesize=100000 -o --move=./quarantine --detect-pua=yes --gen-json $1
+exit
